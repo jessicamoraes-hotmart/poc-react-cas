@@ -1,9 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-function Microfront() {
+function Microfront({ name }) {
   const { t } = useTranslation();
-  return <div>Microfront {t('withTranslation')}</div>;
+  return (
+    <section>
+      <h3>{t('welcome')} - {name}</h3>
+      <article>
+        <p>Microfront {t('withTranslation')}</p>
+      </article>
+    </section>
+  );
 }
 
 export default Microfront;
