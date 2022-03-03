@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useEffect } from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import {useAuthStore} from 'store/useAuthStore'
 
-import { bootstrap, authSlice } from 'modules/auth';
+import { bootstrap } from 'modules/auth';
 import { Structure } from 'components/structure';
 import { Loader } from 'components/loader';
 import PrivateRoute from './private-route.component';
