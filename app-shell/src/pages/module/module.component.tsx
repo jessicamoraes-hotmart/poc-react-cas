@@ -10,7 +10,7 @@ function ModulePage() {
     <div>
       Module inside private route <br/>
       <Suspense fallback="loading...">
-        <Microfront />
+        <Microfront user={auth} />
       </Suspense>
     </div>
   );
