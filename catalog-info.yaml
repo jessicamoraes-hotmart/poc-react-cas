@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: react-cas-quickstart
+  description: ''
+  tags: []
+  annotations:
+    github.com/project-slug: Hotmart-Org/react-cas-quickstart
+spec:
+  type: service
+  lifecycle: production
+  owner: devsecauth_team
+  system: cas
+  heimdall:
+    reportable: false
+    pci: false
+    products:
+    - CAS
+    squads:
+    - AuthN
+    impact: ''
